@@ -151,13 +151,7 @@ print(w)
 
 # Concatenating Dictionaries
 
-lst1=[1,2,3,4]
-lst2=[2,3,4,5]
-
-print(lst1+lst2)
-
-lst2.extend(lst1)
-print(lst2)
+# The update method update() merges the keys and values of one dictionary into another, overwriting values of the same key
 
 
 
