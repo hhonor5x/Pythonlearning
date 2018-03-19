@@ -154,6 +154,68 @@ print(w)
 # The update method update() merges the keys and values of one dictionary into another, overwriting values of the same key
 
 
+#Iterating over dictionaries
+
+d6= {"TS":"TELANGANA","AP":"ANDHRA","TN":"CHENNAI","KL":"KERALA","KA":"KARNATAKA"}
+
+# No method is required to iterate over dictionay keys
+for key in d6:
+    print(key)
+    
+# But it's possible to use method keys() and we will get the same result.
+
+for key in d6.keys():
+    print(key)
+    
+# We can use values() method to itterate over values
+
+for value in d6.values():
+    print(value)
+    
+    
+# Python converts dictoinaries into list with two tuples.
+
+# For instance
+
+d9 = {"AP":"ANDHRA", "TS":"TELANGANA"}
+
+item_views=d9.items() 
+items=list(item_views)
+print(items)
+# Result is [('AP', 'ANDHRA'), ('TS', 'TELANGANA')]
+
+# Similarly we can use method keys() and values() to create a list only with keys and values.
+
+keys_values=d9.keys()
+keys=list(keys_values)
+print(keys)
+
+# Result is ['AP', 'TS']
+
+values_view=d9.values()
+value=list(values_view)
+print(value)
+
+# Result is ['ANDHRA', 'TELANGANA']
+
+print(values_view)
+
+print(keys_values)
+
+print(item_views)
+
+# Turning lists into Dictionaries
+
+bf=["Idly", "dosa", "upma"]
+
+bf_days=["Mon","Tue","Wed","Thur","Fri"]
+
+print(dict(zip(bf,bf_days)))
+
+# Result will be {'Idly': 'Mon', 'dosa': 'Tue', 'upma': 'Wed'}
+
+# Please check the topic converting list to dictionaries one more time.
+
 
 
 
